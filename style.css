@@ -107,10 +107,8 @@ img{
     background-color: var(--secondary-color);
 }
 
-.section-content{
-    margin: 0 auto;
-    max-width: 1300px;
-    padding: 20px 8%;
+section{
+    padding: 1rem 8%;
 }
 
 /* Styling */
@@ -119,6 +117,8 @@ img{
 
 .navbar{
     background-color: var(--secondary-color);
+    background: rgba(206, 101, 59, 0.95);
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     left: 0;
@@ -128,6 +128,11 @@ img{
     align-items: center;
     padding: 20px 8%;
     z-index: 998;
+}
+
+.navbar a{
+    color: var(--secondary-txt-color);
+    font-weight: 500;
 }
 
 .navbar-container{
@@ -141,6 +146,10 @@ img{
 
 .hero-section{
     background-color: var(--primary-color);
+    position: relative;
+    height: 100lvh;
+    padding-top: 15rem;
+    color: var(--primary-txt-color);
 }
 
 .flex-hero-section-container{
@@ -149,7 +158,6 @@ img{
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .flex-hero1{
@@ -165,6 +173,7 @@ img{
 .flex-hero1 p{
     font-size: 2rem;
     width: 80%;
+    color: var(--primary-txt-color);
 }
 
 .flex-hero2{
@@ -180,14 +189,14 @@ img{
 }
 
 
-.about .section-content h1{
+.about h1{
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 2rem;
     color: var(--secondary-txt-color);
 }
 
-.about .section-content p {
+.about p {
     width: 80%;
     padding: 2rem;
     margin-left: 2rem;
@@ -271,37 +280,39 @@ img{
 
 .location-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2 , minmax(300px , 1fr));
     gap: 3rem;
+    margin-bottom: 5rem;
+    padding: 5rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    justify-items: center;
+    align-items: center;
 }
 
 .location{
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    align-items: center;
 }
 
 .location-description{
-    height: 5rem;
-    width: 100%;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
-    padding: 0 1rem;
-    gap: 0.5rem;
-    position: relative;
-    top: -6.5rem;
-    right: -1.5rem;
+    gap: 1rem;
 }
 
+.location-section h1{
+    color: var(--secondary-txt-color);  
+    margin-bottom: 5rem; 
+}
+
+
 .location-img img{
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    position: relative;
-    right: -4.95rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 /* Contact Section Styling */
@@ -309,16 +320,46 @@ img{
 .contact-section{
     background-color: var(--primary-color);
     min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 
-.contact-form > form > , input{
-    color: black;
+.contact-container{
+    padding: 10rem;
 }
 
-label{
-    color: white;
+
+.contact-heading h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 form{
-    color: black;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 500px;
+    gap: 2rem;
+}
+
+
+.form-group input{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--primary-txt-color);
+    padding: 12px 15px;
+}
+
+.form-group button{
+    width: 100%;
+    background: var(--primary-txt-color);
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 12px 15px;
 }

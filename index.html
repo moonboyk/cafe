@@ -8,9 +8,10 @@
   </head>
   <body>
     <header>
-      <div class="section-content">
         <nav class="navbar">
-          <a href="Logo">Cafe</a>
+          <div class="nav-logo">
+            <a href="Logo">Cafe</a>
+          </div>
           <ul class="navbar-container">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -19,13 +20,11 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </div>
     </header>
 
     <main>
       <!-- Hero Section -->
       <section class="hero-section">
-        <div class="section-content">
           <!-- Flex Container for Hero section -->
           <div class="flex-hero-section-container">
             <div class="flex-hero1">
@@ -51,13 +50,11 @@
               <img src="assets/images/hero-coffee-image.png" alt="" />
             </div>
           </div>
-        </div>
       </section>
 
       <!-- About Section -->
       <section class="about">
-        <div class="section-content">
-          
+
           <h1 id="about-heading">ABOUT</h1>
 
           <div class="about-container">
@@ -89,13 +86,11 @@
               <img src="assets/images/coffee-image-about-2.jpg" alt="shop-image"/>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- Food Images Section -->
 
       <section class="food-section" id="food">
-        <div class="section-content">
           <h1 class="food-heading">Foods</h1>
 
         <!-- Food Grid Container -->
@@ -126,13 +121,12 @@
             <img src="assets/images/food-img-8.jpg" alt="Food" />
           </div>
         </div>    
-        </div>
+
       </section>
 
       <!-- Location Section -->
 
       <section class="location-section" id="location">
-        <div class="section-content">
           <h1 class="location-heading">Locations</h1>
 
         <!-- Location Grid Container -->
@@ -182,28 +176,27 @@
             </div>
           </div>
         </div>
-        </div>
       </section>
 
       <!-- Contact Section -->
 
       <section class="contact-section">
-        <div class="section-content">
           <div class="contact-container">
-          <div class="contact-heading">
-            <h1>Cafe</h1>
+            <div class="contact-heading">
+              <h1>Contact Us</h1>
+            </div>
+
+            <div class="contact-form">
+               <form action="" class="form-main">
+                <div class="form-group">
+                  <input id="email" type="email" placeholder="Enter Your Email" />
+                </div>
+                <div class="form-group">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="contact-form">
-            <form action="">
-              <label for="email">Enter the Email</label>
-              <input id="email" type="email" placeholder="Enter Your Email" />
-              <button>
-                <input type="submit" />
-              </button>
-            </form>
-          </div>
-        </div>
-        </div>
       </section>
     </main>
   </body>
