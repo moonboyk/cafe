@@ -308,6 +308,9 @@ section{
     margin-bottom: 5rem; 
 }
 
+.location-description h2 , p , small {
+    color: var(--secondary-color);
+}
 
 .location-img img{
     width: 80px;
@@ -319,47 +322,91 @@ section{
 
 .contact-section{
     background-color: var(--primary-color);
-    min-height: 150px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
     align-items: center;
+    padding: 3rem;
 }
 
 .contact-container{
-    padding: 10rem;
+    width: 400px;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
 }
 
 
 .contact-heading h1{
+    color: var(--secondary-txt-color);
     font-size: 4rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
+
 form{
     display: flex;
-    flex: 1;
     flex-direction: column;
-    min-width: 300px;
-    max-width: 500px;
-    gap: 2rem;
+    gap: 3rem;
+    position: relative;
 }
 
 
-.form-group input{
-    width: 100%;
+input{
+    width: 350px;
+    height: 30px;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 30px;
     border: 2px solid var(--primary-txt-color);
-    padding: 12px 15px;
+    padding: 8px;
+    padding-left: 1rem;
 }
 
-.form-group button{
+::placeholder{
+    color: var(--primary-txt-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+
+.name-icon{
+    color: var(--primary-txt-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+}
+
+.email-icon{
+    color: var(--primary-txt-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+    position: absolute;
+    right: 3rem;
+    top: 9rem;
+}
+
+
+button{
+    box-sizing: border-box;
     width: 100%;
+    height: 50px;
     background: var(--primary-txt-color);
-    border-radius: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--primary-txt-color);
     font-size: 2rem;
     font-weight: 500;
-    padding: 12px 15px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.02,1.02);
 }
