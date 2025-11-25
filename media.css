@@ -40,6 +40,11 @@
 
 
 @media (max-width:570px){
+
+    .navbar a{
+        font-size: 3rem;
+    }
+
     .flex-hero-section-container{
         flex-direction: column-reverse;
     }
@@ -90,6 +95,10 @@
         border-radius: 25px;
     }
 
+    .food-section h1{
+        font-size: 5rem;
+    }
+
     .food-container{
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
@@ -99,6 +108,10 @@
         max-width: 400px;
         width: 100%;
         height: auto;
+    }
+
+    .location-section h1{
+        font-size: 5rem;
     }
 
     .location-container{
@@ -114,5 +127,9 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    }
+
+    .contact-container{
+        padding: 10rem;
     }
 }
