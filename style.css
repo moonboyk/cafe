@@ -29,10 +29,9 @@ html{
 body{
     margin: 0 auto;
     font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
     line-height: 1.4;
     scroll-behavior: smooth;
-    cursor: pointer;
+    overflow-x: hidden;
 }
 
 
@@ -71,9 +70,6 @@ a{
     display: inline-block;
 }
 
-img{
-    width: 400px;
-}
 
 .btn{
     text-align: center;
@@ -148,7 +144,7 @@ section{
 
 .hero-section{
     background-color: var(--primary-color);
-    height: 100lvh;
+    height: 90vh;
     padding-top: 15rem;
     color: var(--primary-txt-color);
 }
@@ -179,6 +175,11 @@ section{
 .flex-hero2{
     display: flex;
     gap: 2rem;
+}
+
+.flex-hero3 img{
+    max-width: 300px;
+    width: 100%;
 }
 
 
@@ -235,8 +236,10 @@ section{
 }
 
 
-.about-item > img{
-    width: 300px;
+.about-item img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 90%;
 }
 
@@ -249,8 +252,7 @@ section{
 
 .food-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
     justify-items: center;
     align-items: center;
     gap: 4rem;
@@ -264,9 +266,10 @@ section{
 }
 
 .food-images img{
-    width: 200px;
-    height: 300px;
     object-fit: cover;
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
     border-radius: 25px;
 }
 
@@ -278,6 +281,7 @@ section{
 }
 
 .location-container{
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(2 , minmax(300px , 1fr));
     gap: 3rem;
